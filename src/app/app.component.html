@@ -1,9 +1,27 @@
-<div>
-  <h1>Categorías</h1>
-  <ul>
-    <li *ngFor="let category of categories">{{ category.name }}</li>
-  </ul>
+<header class="app-header navbar">
+  <h1 id="titulo">Header</h1>
+</header>
+<div class="app-body" id="cuerpo">
+  <div class="sidebar" id="sidebar">
+    <h3>Categorias</h3>
+    <h3>Otros 1</h3>
+    <h3>Otros 2</h3>
+  </div>
+
+  <main class="main" id="main">
+    <!--<router-outlet></router-outlet>-->
+    <div>
+     <h1>Categorías Mercado Libre</h1>
+      <ul>
+       <li *ngFor="let category of categories">{{ category.name }}</li>
+       </ul>
+    </div>
+  </main>
 </div>
+<footer class="app-footer fixed-bottom" >
+  <h1 id="foot">Footer</h1>
+</footer>
 
 
-<router-outlet></router-outlet>
+
+
