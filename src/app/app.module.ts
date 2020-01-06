@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 
-//Componentes
 import { AppRoutingModule } from './app-routing.module';
+
+//Componentes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -12,13 +13,15 @@ import { FooterComponent } from './footer/footer.component';
 //Servicios
 import { CategoriesService } from './categories.service';
 import { CategoriasComponent } from './categorias/categorias.component';
+import { Error404Component } from './error404/error404.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CategoriasComponent
+    CategoriasComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
