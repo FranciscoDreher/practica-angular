@@ -3,13 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 
+//Componentes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
+//Servicios
 import { CategoriesService } from './categories.service';
+import { CategoriasComponent } from './categorias/categorias.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    CategoriasComponent
   ],
   imports: [
     BrowserModule,

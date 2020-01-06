@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CategoriesService } from './categories.service';
 
 @Component({
   selector: 'app-root',
@@ -8,19 +7,8 @@ import { CategoriesService } from './categories.service';
 })
 export class AppComponent {
   title = 'practica-angular';
-  categories: any[] = [];
-
-  constructor(protected categoriesService: CategoriesService) {}
-
-  ngOnInit() {
-    this.categoriesService.getCategories()
-    .subscribe(
-      (data: Object[]) => {
-        this.categories = data;
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
+  
+  constructor(){
+    
   }
 }

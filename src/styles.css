@@ -4,14 +4,10 @@ body {
     font-family: 'Arial', 'Verdana', 'Sans-Serif';
 }
 
-#titulo {
-    padding: 1% 0% 1% 1%;
-    /*text-shadow: 2px 2px 2px purple, 2px 2px 2px #CCC;*/
-}
-
 #cuerpo {
     height: 90%;
 }
+
 #sidebar {
     padding-top: 1%;
     padding-right: 5%;
@@ -29,6 +25,3 @@ li {
     color: rgb(20, 6, 100);
 }
 
-#foot {
-    padding: 0.5% 0% 0.5% 1%;
-}
