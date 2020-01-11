@@ -1,0 +1,9 @@
+<div>
+    <h1>Subcategorías {{ categoria }}</h1>
+    <ul *ngIf="subcategorias">
+        <li *ngFor="let subcategory of subcategorias">
+            <!--<a [routerLink]="[ '/subcategorias', category.id ]">{{ category.name }}</a>-->
+            <a [routerLink]="[ '/subcategorias', subcategory.id ]">{{ subcategory.name }}</a>
+        </li>
+    </ul>
+</div>

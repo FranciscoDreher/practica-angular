@@ -11,4 +11,8 @@ export class CategoriesService {
   getCategories() {
     return this.http.get("https://api.mercadolibre.com/sites/MLA/categories");
   }
+
+  getSubcategories(id: string) {
+    return this.http.get("https://api.mercadolibre.com/categories/" + id);
+  }
 }

@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CategoriesService } from './categories.service';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { Error404Component } from './error404/error404.component';
+import { SubcategoriasComponent } from './subcategorias/subcategorias.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { Error404Component } from './error404/error404.component';
     HeaderComponent,
     FooterComponent,
     CategoriasComponent,
-    Error404Component
+    Error404Component,
+    SubcategoriasComponent
   ],
   imports: [
     BrowserModule,

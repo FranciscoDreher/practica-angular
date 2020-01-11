@@ -1,6 +1,8 @@
 <div>
     <h1>Categorías Mercado Libre</h1>
     <ul>
-        <li *ngFor="let category of categories">{{ category.name }}</li>
+        <li *ngFor="let category of categories">
+            <a [routerLink]="[ '/subcategorias', category.id ]">{{ category.name }}</a>
+        </li>
     </ul>
 </div>
